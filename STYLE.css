@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#ffecd2, #fcb69f);
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700; 
+}
+
+.hero p {
+    font-size: 1.4rem;
+    font-weight: 400; 
+}
+
+
+header {
+    background: #e85d04;
+    color: white;
+    padding: 30px;
+}
+
+.hero {
+    background-image: url("Heißer\ Planet\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 15vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+.button-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.nav-button, .button {
+    display: inline-block;
+    background-color: #e85d04;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.nav-button:hover, .button:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+
+.content, .box {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.content:hover, .box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+.image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.image-text img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .image-text {
+        flex-direction: column;
+    }
+
+    .image-text img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-button {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
